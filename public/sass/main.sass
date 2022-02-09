@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Syncopate:wght@400;700&display=swap')
+
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Syncopate', sans-serif; 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.heroSection
+    font-family: 'Open Sans', sans-serif
+    padding: 1em
+    color: whitesmoke
+    background: url("/images/specialty's-bg1.png") center/cover no-repeat
+    nav
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        >article
+            display: flex
+            justify-content: space-around
+            a
+                margin: 0 25px 0 25px
+                color: whitesmoke
+                text-decoration: none
+                opacity: 0.8
+                transition: 0.4s
+                &:hover
+                    text-decoration: underline
+                    opacity: 1
+
+    article
+        margin-top: 5vh
+        display: flex
+        justify-content: space-around
+        align-items: center
+        >p
+            text-orientation: inherit
+            writing-mode: vertical-lr
+            padding: 0
+            font-size: 10px
+
+        div:nth-of-type(1)
+            text-align: center
+            h1
+                margin-top: 10px
+                font-family: 'Syncopate', sans-serif
+                font-weight: 400
+                font-size: 70px
+            button
+                background: none
+                border: 2px solid whitesmoke
+                border-radius: 5px
+                margin: 30px 10px
+                padding: 20px 35px
+                a
+                    text-decoration: none
+                    color: whitesmoke
+        div:nth-of-type(2)
+            .circle
+                border: 1px solid whitesmoke
+                border-radius: 50%
+                padding: 10px 12px
+                margin: 10px auto
+.footerSection
+    font-family: 'Open Sans', sans-serif
+    padding: 2em
+    text-align: center
+    color: #8C8C8C
+    background-color: black
+.aboutMain
+    font-family: 'Open Sans', sans-serif
+    display: flex
+    justify-content: center
+    align-items: space-between
+    section:nth-of-type(1)
+        text-align: center
+        align-self: center
+        width: 40vw
+        h2
+            font-family: 'Syncopate', sans-serif
+            margin: 5px 0
+        h3
+            margin: 8px 0
+    .yellowsquare
+        position: absolute
+        right: 35px
+        bottom: -150px
+        border: 10px solid #E8C343
+        width: 20vw
+        padding-bottom: 25vh
+.teamMain
+    background: url("/images/specialty's-bg.png") center/cover no-repeat
+    padding: 1em
+    color: whitesmoke

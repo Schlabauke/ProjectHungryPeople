@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <%- include('../partials/header.ejs') %>
+        <h2>CONTACT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequatur dolores fugiat delectus
+            nostrum.
+        </p>
+        <form action="/contact" method="POST" enctype="application/x-www-form-urlencoded">
+            <article>
+                <input type="text" name="name" id="name" placeholder="your name">
+                <input type="email" name="email" id="email" placeholder="your Email">
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    placeholder="phonenumer 123-45-678">
+            </article>
+            <input type="text" name="message" id="message" placeholder="your message">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <input type="submit" value="SEND MESSAGE">
+            </article>
+        </form>
+        <footer>
+            <%- include('../partials/footer.ejs') %>
+
+        </footer>
+        <script src="https://kit.fontawesome.com/c63e956a50.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

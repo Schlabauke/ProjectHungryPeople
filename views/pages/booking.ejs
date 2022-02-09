@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+
+    <main class='bookingMain'>
+        <section>
+            <h2>BOOK A TABLE</h2>
+            <img src="/images/underline.png" alt="underline">
+            <form onsumbit='return false' action="/booking" method="POST" enctype="application/x-www-form-urlencoded">
+                <article>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </article>
+                <article>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="phonenumber 123-45-678">
+                    <select name="people" id="people" placeholder="People">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                    </select>
+                </article>
+                <article>
+                    <input type="date" name="date" id="date" placeholder="Date">
+                    <select name="time" id="time" placeholder="Time">
+                        <option value="eight">8:00 pm</option>
+                        <option value="eightThirty">8:30 pm</option>
+                        <option value="nine">9:00 pm</option>
+                        <option value="nineThirty">9:30 pm</option>
+                    </select>
+                </article>
+                <input type="submit" value="BOOK NOW">
+            </form>
+        </section>
+        <section>
+            <img src="/images/about-img.png" alt="fireplace">
+        </section>
+        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+    </main>
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+    <script src="https://kit.fontawesome.com/c63e956a50.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

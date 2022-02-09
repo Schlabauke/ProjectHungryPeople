@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>received message</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+    <main>
+
+        <section>
+            <h2>This is what we received:</h2>
+            <p> Your Name: <%- userMessage.name %>
+            </p>
+            <p>
+                <%- userMessage.email %>
+            </p>
+            <p>
+                <%- userMessage.phone %>
+            </p>
+            <p>
+                <%- userMessage.message %>
+            </p>
+            <p>Thank you for sending us a message!
+                We will get in touch with you!
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+    <script src="https://kit.fontawesome.com/c63e956a50.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
