@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 const formidable = require('formidable')
-
 const sendEmail = require('./sendEmail')
+const dotenv = require('dotenv').config()
 
 
 app.set('view engine', 'ejs')
@@ -89,7 +89,9 @@ app.post('/booking', (req, res) => {
                 date: fields.date,
                 time: fields.time
             }
+            console.log(incomingBooking)
             userBooking.push(incomingBooking)
+            sendEmail(incomingBooking)
             res.redirect('/receivedbooking');
         };
     })

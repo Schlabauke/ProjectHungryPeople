@@ -1,24 +1,26 @@
 const nodemailer = require('nodemailer')
-const dotenv = require('dotenv')
-
-dotenv.config()
+const dotenv = require('dotenv').config()
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
     auth: {
-        user: process.env._User,
-        pass: process.env._Pass,
+        user: process.env.USER,
+        pass: process.env.PASS,
     },
     logger: true
 })
 
 function sendEmail(options) {
     console.log('Email-Options:', options)
-    const to = options.to
-    const subject = options.subject
-    const message = options.message
+    const to = options.email
+    const subject = 'Your reservation at HungryPeople-Yummy'
+    const message = `Thank you for your reservation at HungryPeople. \n 
+    This is your reservation: \n
+    Date: ${options.date}, \n
+    at: ${options.time}, \n
+    for ${options.people} person(s).`
 
     const messageHtml = message.replaceAll("\n", "<br/>")
 
