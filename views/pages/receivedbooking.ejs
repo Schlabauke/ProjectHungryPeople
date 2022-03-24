@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>receivedbooking</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/sass/main.css">
 
 </head>
 
@@ -18,25 +18,13 @@
 
 
         <% userBooking.forEach(elt=> { %>
-            <section>
-                <h2>This is your reservation:</h2>
-                <p> Your Name: <%- elt.name %>
+            <section class="received">
+               
+                <h2>Thank you for your reservation!</h2>
+                  <p>Please check your Email!</p> 
+                  <p>We will get in touch with you in case something changes!
                 </p>
-                <p>
-                    Your Email: <%- elt.email %>
-                </p>
-                <p>
-                    Your phonenumber: <%- elt.phone %>
-                </p>
-                <p>reservation for: <%- elt.people %> people </p>
-                <p>
-                    Date & Time:
-                    <%- elt.date %>,
-                        <%- elt.time %>
-                </p>
-                <p>Thank you for your reservation! PLease check your Email!
-                    We will get in touch with you in case something changes!
-                </p>
+                <div class="yellowsquare"></div>
             </section>
             <% }) %>
     </main>

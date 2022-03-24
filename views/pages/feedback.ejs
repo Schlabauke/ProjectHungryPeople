@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feddback</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/sass/main.css">
 </head>
 
 <body>
@@ -14,14 +14,16 @@
         <%- include('../partials/header.ejs') %>
     </header>
     <!-- Main -->
-    <main class="feedbackMain">
+    <main class="bookingMain">
         <!-- Feedback Form -->
-        <section>
+        <p class="rotate">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+
+        <section class="sectionBooking">
             <h2>YOUR FEEDBACK</h2>
             <img src="/images/underline.png" alt="underline">
 
             <form action="/feedback" method="POST" enctype="application/x-www-form-urlencoded">
-                <div>
+                <article>
                     <input type="text" name="feedbackName" id="feedbackName" placeholder="Name">
                     <select name="feedbackStars" id="feedbackStars" placeholder="Stars">
                         <option value="one">1</option>
@@ -30,19 +32,18 @@
                         <option value="four">4</option>
                         <option value="five">5</option>
                     </select>
-                </div>
-                <div>
-                    <input type="text" name="feedbackMessage" id="feedbackMessage" placeholder="Your Message">
-                </div>
-                <div>
-                    <input type="submit" value="SEND NOW">
-                </div>
+                </article>
+                <article>
+                    <textarea row="5" cols="63" name="feedbackMessage" id="feedbackMessage" placeholder="Your Message">Your Feedback</textarea>
+                </article>
+                <article>
+                    <input class="submit" type="submit" value="SEND NOW">
+                </article>
             </form>
         </section>
         <section>
             <img src="/images/feedback.png" alt="fireplace">
         </section>
-        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
     </main>
     <footer>
         <%- include('../partials/footer.ejs') %>

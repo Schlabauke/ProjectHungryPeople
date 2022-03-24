@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Syncopate:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rotate {
+  text-align: center;
+  text-orientation: inherit;
+  writing-mode: vertical-lr;
+  padding: 0;
+  font-size: 10px;
+}
+
+.sectionOne {
+  text-align: center;
+  align-self: center;
+  width: 40vw;
+}
+.sectionOne h2 {
+  font-family: "Syncopate", sans-serif;
+  margin: 5px 0;
+}
+.sectionOne h2 h3 {
+  margin: 8px 0;
+}
+.sectionOne p {
+  margin: 1% 0;
+}
+
+.yellowsquare {
+  position: absolute;
+  right: 3.5vw;
+  bottom: -33vh;
+  border: 10px solid #E8C343;
+  width: 21vw;
+  padding-bottom: 30vh;
+}
+
+.yellowsquareLeft {
+  postion: absolute;
+  left: 3.5vw;
+  bottom: -33vh;
+  border: 10px solid #E8C343;
+  width: 21vw;
+  padding-bottom: 30vh;
+}
+
+.heroSection {
+  font-family: "Open Sans", sans-serif;
+  padding: 1em;
+  color: whitesmoke;
+  background: url("/images/specialty's-bg1.png") center/cover no-repeat;
+}
+.heroSection nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.heroSection nav > article {
+  display: flex;
+  justify-content: space-around;
+}
+.heroSection nav > article a {
+  margin: 0 25px 0 25px;
+  color: whitesmoke;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.heroSection nav > article a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+.heroSection article {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.heroSection article div:nth-of-type(1) {
+  text-align: center;
+}
+.heroSection article div:nth-of-type(1) h1 {
+  margin-top: 10px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+}
+.heroSection article div:nth-of-type(1) button {
+  background: none;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  margin: 30px 10px;
+  padding: 20px 35px;
+}
+.heroSection article div:nth-of-type(1) button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.heroSection article div:nth-of-type(2) .circle {
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  padding: 10px 12px;
+  margin: 10px auto;
+}
+
+.footerSection {
+  font-family: "Open Sans", sans-serif;
+  padding: 2em;
+  text-align: center;
+  color: #8C8C8C;
+  background-color: black;
+}
+
+.aboutMain {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.teamMain {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  background: url("/images/specialty's-bg.png") center/cover no-repeat;
+  padding: 1em;
+  color: whitesmoke;
+}
+
+.bookingMain {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+.bookingMain .sectionBooking {
+  text-align: center;
+  align-self: center;
+  width: 42vw;
+}
+.bookingMain .sectionBooking h2 {
+  font-family: "Syncopate", sans-serif;
+  margin: 5px 0;
+}
+.bookingMain form {
+  margin-top: 5vh;
+}
+.bookingMain form article input {
+  width: 15vw;
+  padding: 1vh 0;
+  margin: 1vh 1vw;
+}
+.bookingMain form article select {
+  width: 15vw;
+  padding: 1vh 0;
+  margin: 1vh 1vw;
+}
+
+.btnTouch {
+  text-decoration: none;
+  background: #E8C343;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 1%;
+}
+.btnTouch:hover {
+  color: whitesmoke;
+  border: 2px solid black;
+}
+
+.submit {
+  background: #E8C343;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  margin: 30px 10px;
+  padding: 20px 35px;
+}
+.submit:hover {
+  color: whitesmoke;
+  border: 2px solid black;
+}
+
+.contactMain {
+  margin: 5vh 0;
+  text-align: center;
+}
+.contactMain h2 {
+  font-family: "Syncopate", sans-serif;
+  margin: 5px 0;
+}
+.contactMain p {
+  margin-top: 1vh;
+}
+.contactMain form {
+  margin: 5vh 0;
+}
+.contactMain form article {
+  margin-bottom: 1vh;
+}
+.contactMain form article input {
+  width: 25vw;
+  padding: 1vh 0;
+  margin: 1vh 1vw;
+}
+
+div {
+  margin-top: 5vh;
+}
+
+.received {
+  text-align: center;
+  margin: 20vh 0;
+}
+.received h2 {
+  margin: 2vh 0;
+}
+
+/*# sourceMappingURL=main.css.map */
